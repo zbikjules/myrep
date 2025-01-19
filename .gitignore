@@ -1,0 +1,2 @@
+echo "ignored_file.txt" > .gitignore
+
