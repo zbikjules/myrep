@@ -1,1 +1,12 @@
-echo "To jest plik ignorowany" > ignored_file.txt
+git clone https://github.com/zbikjules/myrep.git
+cd projekt-git
+echo "ignored_file.txt" > .gitignore
+git add .gitignore
+git commit -m "Dodaj plik .gitignore, ignoruje ignored_file.txt"
+git add main.cpp helper.cpp
+git commit -m "Dodaj pliki źródłowe main.cpp i helper.cpp"
+git add feature.cpp
+git commit -m "Dodano feature.cpp z nową funkcjonalnością"
+git merge new-feature
+git push origin main
+
